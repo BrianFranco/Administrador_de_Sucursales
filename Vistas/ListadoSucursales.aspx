@@ -16,7 +16,6 @@
         <a href="EliminarSucursales.aspx" class="HyperLink" >Eliminar sucursal</a>
     </header>
     <main>
-        
             <form id="form1" runat="server">
                 <div class="flex">
                     <div class="titulo">
@@ -35,16 +34,8 @@
                         </div>
                     </div>
                     <div class="validacion">
-                        <div class="block">
-                            <asp:CompareValidator ID="CvTxbIdSucursal" ControlToValidate="TxbIdSucursal" runat="server" Operator="GreaterThanEqual" ValueToCompare="0" Type="Integer" ErrorMessage="Debe Ingresar Numeros Enteros."></asp:CompareValidator>
-                        </div>
-                        <br />
-                        <div class="block">
+                            <asp:CompareValidator ID="CvTxbIdSucursal" ControlToValidate="TxbIdSucursal" runat="server" Operator="GreaterThan" ValueToCompare="0" Type="Integer" ErrorMessage="Debe Ingresar Numeros Enteros y mayores a cero."></asp:CompareValidator>
                             <asp:RequiredFieldValidator ID="RfvTxbIdSucursal" runat="server" ErrorMessage="No se puede ingresar campos vacios." ControlToValidate="TxbIdSucursal"></asp:RequiredFieldValidator>
-                        </div>
-                        
-                        
-                        <%-- coloquen aca los validadores de los textbox --%>
                     </div>
                 </div>
                 <div class="flex">

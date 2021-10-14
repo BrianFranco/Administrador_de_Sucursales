@@ -16,8 +16,6 @@
         <a href="EliminarSucursales.aspx" class="HyperLink" >Eliminar sucursal</a>
     </header>
     <main>
-
-        
         <form id="form1" runat="server">
             <div class="flex">
                 <div class="titulo">
@@ -31,14 +29,15 @@
                         <asp:TextBox ID="TxbIdSucursal" TextMode="SingleLine" runat="server"></asp:TextBox>
                     </div>
                     <div class="form-btn">
-                            <asp:Button  CssClass="btn" ID="BtnEliminar" runat="server" Text="Eliminar" />
+                            <asp:Button  CssClass="btn" ID="BtnEliminar" OnClick="BtnEliminar_Click" runat="server" Text="Eliminar" />
                      </div>
                 </div>
                 <div class="validacion">
-                    <%-- coloquen aca los validadores de los textbox --%>
+                        <asp:RequiredFieldValidator ID="RfvTxbIdSucursal" ControlToValidate="TxbIdSucursal" runat="server" ErrorMessage="No se puede ingresar campos vacios."></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="CvTxbIdSucursal" ControlToValidate="TxbIdSucursal" runat="server" ErrorMessage="Debe Ingresar Numeros Enteros y mayores a cero." Type="Integer" Operator="GreaterThan" ValueToCompare="0"></asp:CompareValidator>
                     <div class="form-mensaje">
                         <asp:Label ID="LblMensaje" runat="server"></asp:Label>
-                    </div>
+                    </div>    
                 </div>
             </div>
         </form>

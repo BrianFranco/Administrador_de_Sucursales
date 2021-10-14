@@ -33,7 +33,6 @@ namespace Vistas
         protected void BtnMostrarTodos_Click(object sender, EventArgs e)
         {
             CargarSucursalesGrid();
-            TxbIdSucursal.Text = String.Empty;
         }
 
         void CargarSucursalesGrid()

@@ -30,12 +30,14 @@ namespace Vistas
                 if (negocioSucursal.InsertarSucursal(GetSucursalCargada()))
                 {
                     LblMensaje.Text = "La sucursal se ha agregado con éxito.";
+                    LimpiarCampos();
                 }
                 else
                 {
                     LblMensaje.Text = "No se logro agregar la sucursal.";
                 }
-            }    
+            }
+            
         }
 
         void CargarDDLProvincias()
@@ -58,6 +60,13 @@ namespace Vistas
             };
 
             return sucursal;
+        }
+        protected void LimpiarCampos()
+        {
+            TXTNombreSucursal.Text = String.Empty;
+            TXTDescripcionSucursal.Text = String.Empty;
+            TXTDireccionSucursal.Text = String.Empty;
+            DDLProvinciaSucursal.SelectedIndex = 0;
         }
     }
 }

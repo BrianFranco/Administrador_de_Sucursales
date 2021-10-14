@@ -52,8 +52,8 @@
             <div class="validacion">
                 <div class="form-mensaje">
                     <asp:Label ID="LblMensaje" runat="server"></asp:Label>
-                    <asp:ValidationSummary ID="VSTextboxs" runat="server" ForeColor="Red" HeaderText="Campos incompletos" ValidationGroup="G1" />
                 </div>
+                    <asp:ValidationSummary ID="VSTextboxs" runat="server" ForeColor="Red" HeaderText="Campos incompletos" ValidationGroup="G1" />
             </div>
         </div>
     </form>

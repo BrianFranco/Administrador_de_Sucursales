@@ -51,6 +51,24 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.Button BtnEliminar;
 
         /// <summary>
+        /// Control RfvTxbIdSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RfvTxbIdSucursal;
+
+        /// <summary>
+        /// Control CvTxbIdSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CvTxbIdSucursal;
+
+        /// <summary>
         /// Control LblMensaje.
         /// </summary>
         /// <remarks>
